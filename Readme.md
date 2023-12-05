@@ -1,6 +1,6 @@
 # Unofficial Nessus Scanner Build
 
-This is a fork of Steve McGrath's Unoffical Nessus Scanner - but using Alma8 and having Nessus 10.6.3 scanner installed fro the get-go.
+This is a fork of Steve McGrath's Unofficial Nessus Scanner - but using Alma8 and having Nessus 10.6.3 scanner installed fro the get-go.
 
 Tenable's Nessus Scanner is a vulnerability scanner that looks for known vulnerabilities, malware, configuration issues, etc. both through network inspection of hosts and through authenticated analysis of the host itself.  For more information about Nessus, please consult the following links:
 
