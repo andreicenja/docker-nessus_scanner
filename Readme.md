@@ -1,11 +1,6 @@
-# Unofficial Nessus Scanner [![Build Status][status]][travis][![Docker Stars][stars]][docker][![Docker Pulls][pulls]][docker]
+# Unofficial Nessus Scanner Build
 
-[status]: https://travis-ci.org/SteveMcGrath/docker-nessus_scanner.svg?branch=master
-[stars]: https://img.shields.io/docker/stars/stevemcgrath/nessus_scanner.svg
-[pulls]: https://img.shields.io/docker/pulls/stevemcgrath/nessus_scanner.svg
-[github]: https://github.com/SteveMcGrath/docker-nessus_scanner
-[docker]: https://hub.docker.com/r/stevemcgrath/nessus_scanner/
-[travis]: https://travis-ci.org/SteveMcGrath/docker-nessus_scanner
+This is a fork of Steve McGrath's Unoffical Nessus Scanner - but using Alma8 and having Nessus 10.6.3 scanner installed fro the get-go.
 
 Tenable's Nessus Scanner is a vulnerability scanner that looks for known vulnerabilities, malware, configuration issues, etc. both through network inspection of hosts and through authenticated analysis of the host itself.  For more information about Nessus, please consult the following links:
 
@@ -14,11 +9,8 @@ Tenable's Nessus Scanner is a vulnerability scanner that looks for known vulnera
 
 # Build files
 
-The github repository for the build files is located [here](https://github.com/stevemcgrath/docker-nessus_scanner).
+The github repository for the build files is located [here](https://github.com/andreicenja/docker-nessus_scanner).
 
-# Supported tags
-
-Each image is tagged with the major, minor, and patch releases.  The most current image is always tagged as "latest".  For the current listing of tags, please refer to the [tags tab](https://hub.docker.com/r/stevemcgrath/nessus_scanner/tags/) for a current listing.
 
 # Usage
 
