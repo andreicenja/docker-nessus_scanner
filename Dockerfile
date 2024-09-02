@@ -1,5 +1,7 @@
 FROM almalinux:8
 
+RUN yum -y update
+
 ENV LINKING_KEY     ""
 ENV SCANNER_NAME    ""
 ENV SCANNER_GROUPS  ""
