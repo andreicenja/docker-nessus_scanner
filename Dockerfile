@@ -1,4 +1,4 @@
-FROM almalinux:8
+FROM almalinux:9
 
 RUN yum -y update
 
@@ -17,10 +17,12 @@ ENV ADMIN_USER      "admin"
 ENV ADMIN_PASS      ""
 
 COPY nessus_startup.sh nessus_adduser.exp /usr/bin/
-COPY yum.repo /etc/yum.repos.d/Tenable.repo
-COPY gpg.key /etc/pki/rpm-gpg/RPM-GPG-KEY-Tenable
+COPY gpg.key-2025 /etc/pki/rpm-gpg/RPM-GPG-KEY-Tenable
 
-RUN    yum -y -q install Nessus expect java-11-openjdk-headless         \
+RUN curl --request GET   --url 'https://www.tenable.com/downloads/api/v2/pages/nessus/files/Nessus-10.8.3-el9.x86_64.rpm'   --output 'Nessus-10.8.3-el9.x86_64.rpm'
+RUN yum -y localinstall Nessus-10.8.3-el9.x86_64.rpm 
+
+RUN    yum -y -q install expect java-11-openjdk-headless                \
     && yum -y -q clean all                                              \
     && chmod 755 /usr/bin/nessus_startup.sh                             \
     && chmod 755 /usr/bin/nessus_adduser.exp                            \
